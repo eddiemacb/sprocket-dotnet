@@ -12,7 +12,7 @@ namespace sprocket_dotnet.Controllers
         private const string Template = "Math, {0}";
     
         // GET api/sum
-        [HttpGet(template: "/api/sum/{number_one}/{number_2}")]
+        [HttpGet(template: "/api/sum/{number_one}/{number_two}")]
         public string sum(int number_one, int number_two)
         {
             Math math = new Math(number_one, number_two);
